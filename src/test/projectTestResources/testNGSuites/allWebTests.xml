@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd"> <!-- Ensure that there is an 's' after 'http', otherwise an ssl error will occur-->
+<suite name="All android Test Suite">
+    <listeners>
+        <listener class-name="com.qa.testNG.Listeners"/>
+    </listeners>
+    <test verbose="2" thread-count="2" name="mgoNativeRegression"> <!--overrides whatever is written in surefire.-->
+        <classes>
+            <class name="com.qa.cucumberFiles.addEditDeleteCardViaHomePage.testRunnerFiles.AddEditDeleteCardViaHomePageTestRunner"/>
+
+            <class name="com.qa.cucumberFiles.addEditDeleteReceiverViaBubble.testRunnerFiles.addEditDeleteReceiverViaBubbleTestRunner"/>
+
+            <class name="com.qa.cucumberFiles.addEditProfile.testRunnerFiles.editUpdatePhoneNumberProfilePageTestRunner"/>
+            <class name="com.qa.cucumberFiles.addEditProfile.testRunnerFiles.sendMoneyNotificationOptionViaProfilePageTestRunner"/>
+
+
+            <class name="com.qa.cucumberFiles.payBills.testRunnerFiles.payBillNoReceiverBubblesTestRunner"/>
+            <class name="com.qa.cucumberFiles.payBills.testRunnerFiles.payBillsCCPayBillTestRunner"/>
+            <class name="com.qa.cucumberFiles.payBills.testRunnerFiles.payBillsPayAgainTestRunner"/>
+            <class name="com.qa.cucumberFiles.payBills.testRunnerFiles.payBillsPWCOfflineBillerTestRunner"/>
+            <class name="com.qa.cucumberFiles.payBills.testRunnerFiles.payBillsSurveyTestRunner"/>
+            <class name="com.qa.cucumberFiles.payBills.testRunnerFiles.payBillValidateDefaultPaymentOptionTestRunner"/>
+            <class name="com.qa.cucumberFiles.payBills.testRunnerFiles.payBillNoReceiverBubblesnonUSTestRunner"/>
+
+            <class name="com.qa.cucumberFiles.receiveRedirect.testRunnerFiles.receiveRedirectsTestRunner"/>
+
+            <class name="com.qa.cucumberFiles.recurringPayments.testRunnerFiles.RecurringPaymentsSeriesTestRunner"/>
+            <class name="com.qa.cucumberFiles.recurringPayments.testRunnerFiles.SeriesNumberinscheduleTransactionsTestRunner"/>
+            <class name="com.qa.cucumberFiles.recurringPayments.testRunnerFiles.createMultipleseriesTestRunner"/>
+
+
+            <class name="com.qa.cucumberFiles.RegisterNewProfile.testRunnerFiles.SendAbandonTestRunner"/>
+            <class name="com.qa.cucumberFiles.RegisterNewProfile.testRunnerFiles.challendeIDVerifyTestRunner"/>
+            <class name="com.qa.cucumberFiles.RegisterNewProfile.testRunnerFiles.ChallengeSMSabondonTestRunner"/>
+
+            <class name="com.qa.cucumberFiles.RegisterNewProfile.testRunnerFiles.USChallengeSMSabondonTestRunner"/>
+
+            <class name="com.qa.cucumberFiles.RegisterNewProfile.testRunnerFiles.homepageUIValidationsTestRunner"/>
+
+            <class name="com.qa.cucumberFiles.RegisterNewProfile.testRunnerFiles.idUploadVerifyTestRunner"/>
+            <class name="com.qa.cucumberFiles.RegisterNewProfile.testRunnerFiles.l17statuscheckTestRunner"/>
+            <class name="com.qa.cucumberFiles.RegisterNewProfile.testRunnerFiles.MNReferIDuploadTestRunner"/>
+
+
+            <class name="com.qa.cucumberFiles.RegisterNewProfile.testRunnerFiles.RegistrationWithLoyaltyEnrollmentTestRunner"/>
+            <class name="com.qa.cucumberFiles.RegisterNewProfile.testRunnerFiles.RegistrationWithOutLoyaltyEnrollmentTestRunner"/>
+            <class name="com.qa.cucumberFiles.RegisterNewProfile.testRunnerFiles.RegistrationwithPlusSigninProfileEmailTestRunner"/>
+            <class name="com.qa.cucumberFiles.RegisterNewProfile.testRunnerFiles.RegistrationWithOutLoyaltyEnrollmentnonUSTestRunner"/>
+            <class name="com.qa.cucumberFiles.RegisterNewProfile.testRunnerFiles.RegistrationWithLoyaltyEnrollmentnonUSTestRunner"/>
+
+            <class name="com.qa.cucumberFiles.RegisterNewProfile.testRunnerFiles.registerwithoutphoneNumberTestRunner"/>
+            <class name="com.qa.cucumberFiles.RegisterNewProfile.testRunnerFiles.CAregistrationwithCanadaPRTestRunner"/>
+
+
+            <class name="com.qa.cucumberFiles.sendAgain.testRunnerFiles.Loyaltydiscount20percentTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendAgain.testRunnerFiles.Loyaltydiscount40percentTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendAgain.testRunnerFiles.sendAgainAccountDepositTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendAgain.testRunnerFiles.sendAgainAccountDepositViaBubbleTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendAgain.testRunnerFiles.sendAgainCCSendToCardTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendAgain.testRunnerFiles.sendAgainFastSendTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendAgain.testRunnerFiles.sendAgainFastSendViaBubbleTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendAgain.testRunnerFiles.sendAgainInteracCashpickupTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendAgain.testRunnerFiles.sendAgainMobileWalletViaBubbleTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendAgain.testRunnerFiles.sendAgainPWMBAccountDepositTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendAgain.testRunnerFiles.sendAgainPWMBCashpickupTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendAgain.testRunnerFiles.sendAgainSTCViaBubbleTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendAgain.testRunnerFiles.sendAgainTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendAgain.testRunnerFiles.LoyaltyEnrollment_sendTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendAgain.testRunnerFiles.schedule5transactionsSeriesTestRunner"/>
+
+
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.SendMoneyDelivryDateTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.VerifyInlineMEssagesTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.SendMoneySplitTransactionsTestRunner"/>
+
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneyusingreferalLinkTestRunner"/>
+
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.LocationTescoRKioskTestRunner"/>
+
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.ActimizeBlockTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.ActimizeBLockUKTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.ActimizeEMAILTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.ActimizeSMSTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.ActimizeRejectTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.ActimizeReviewTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.addressUpdateZipNotMandatoryTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.autoCancelTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.ComplianceHoldTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.coockiePreferencesTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.LoginandJoinRewardsprogramTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneyCancelNewModalTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.SendMoneyCancelTransactionsRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneyCANInteracCashPickCancelTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneyCANInteracCashPickTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneyCashPupTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.SendMoneyCCHomeDeliveryRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneyCCSendToCardTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneyCancelNewModalTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.SendMoneyCancelTransactionsRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneyChangeLanguageTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneyFastSendTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneyGFFPID1LimitTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneyGFFPID2LimitTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneyMobileWalletRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.SendMoneyPayWithCashRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneyPromocodeTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneyPWMBTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneyReadyToPayTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneyReceiveTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendmoneyReferTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneySofortCaskpickupCancelTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneySofortCaskpickupTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneySTCPrepaidCardTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.SendMoneySurveyRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneyTrackTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.SendMoneyTransactionReceiptRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.SendTocardTodifferentCardTypesTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneyCashPupUStoHaitiTestRunner"/>
+
+
+
+            <class name="com.qa.cucumberFiles.RegisterNewProfile.testRunnerFiles.IDuploadAbondonTestRunner"/>
+            <class name="com.qa.cucumberFiles.RegisterNewProfile.testRunnerFiles.ChallengeEmailabondonTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendmoneyReferTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.ValidateDatesandMemoRunner"/>
+
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.SendmoneyReceiveCurrenciesTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.SendmoneyLocationTaxTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.VerifyinvalldMGOurlTestRunner"/>
+
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.referfriendpopUpTestRunner"/>
+
+
+
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneysofortAFghanisthanTestRunner"/>
+
+
+            <class name="com.qa.cucumberFiles.contactUs.testRunnerFiles.contactUsTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneyPoliCaskpickupTestRunner"/>
+            <class name="com.qa.cucumberFiles.sendMoney.testRunnerFiles.sendMoneyTrueLayerCaskpickupTestRunner"/>
+
+            <class name="com.qa.cucumberFiles.emtAdmin.testRunnerFiles.emitAdminValidationTestRunner"/>
+
+
+
+        </classes>
+    </test>
+</suite>
